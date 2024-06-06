@@ -16,6 +16,6 @@
             `<a href="details.html?id=${c.id}">${c.courseName}</a>`
         ).join("<br>")
     }
-    fetch("http://127.0.0.1:8081/api/courses").then(r=>r.json()).then(renderList);
+    fetch("http://localhost:8081/api/courses").then(r=>r.json()).then(renderList);
 </script>
 </html>
